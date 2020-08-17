@@ -1,0 +1,46 @@
+
+.restaurant {
+    background: #ffffff;
+    @include defaultShadow();
+    @include radius(20px);
+
+    .restaurant-image {
+
+        img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .restaurant-status {
+            position: absolute;
+            top: 10px;
+            right: -10px;
+            color: #fff;
+            padding: 3px 15px;
+            font-size: 12px;
+            background: var(--red);
+
+            @include radius(6px);
+            @include shadow(0 0px 10px var(--red));
+        }
+    }
+    .restaurant-body {
+        .restaurant-name {
+            a {
+                color: #000;
+                font-size: 15px;
+                font-weight: 700;
+
+                &:hover {
+                    color: var(--indigo);
+                }
+            }
+        }
+        .restaurant-address {
+            p {
+                font-size: 12px;
+                color: var(--gray);
+            }
+        }
+    }
+}

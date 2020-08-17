@@ -1,0 +1,24 @@
+
+.restaurant-page {
+    .image {
+        img {
+            @include radius(20px);
+        }
+    }
+    .category-list {
+
+    }
+
+    .restaurant-food {
+
+        li {
+            background: #ffffff;
+
+            .product-image {
+                img {
+                    @include radius(10px);
+                }
+            }
+        }
+    }
+}

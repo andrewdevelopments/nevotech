@@ -1,0 +1,49 @@
+
+*:focus {
+    outline: 0;
+}
+body {
+    background: #f6f6f6;
+}
+p, span {
+    line-height: normal;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    @include transition(all .3s);
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    background: var(--success);
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px 30px;
+    margin: 0;
+    z-index: 1001;
+
+    @include radius(50px);
+    @include transform(translateX(-50%));
+}
+
+.cart-widget {
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    max-width: 400px;
+    min-width: 300px;
+    background: #fff;
+
+    @include defaultShadow();
+}
